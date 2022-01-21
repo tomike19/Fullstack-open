@@ -1,10 +1,12 @@
 import './App.css';
 
 const App = () => {
-  console.log("hello world")
+  const now = new Date();
+  const a =10;
+  const b= 30;
   return (
     <div>
-    <h1>Hello</h1>
+    <p>hello world, it is {now.toDateString()}</p>
     </div>
   );
 }
