@@ -1,12 +1,11 @@
 import './App.css';
+import Task1 from './lesson 1-1.1-2/task1';
 
 const App = () => {
-  const name="peter";
-  const age="10";
+  
   return (
     <div>
-    <p>hello {name}</p> 
-    <p>peter is {age} years old </p>
+    <Task1/>
     </div>
   );
 }
