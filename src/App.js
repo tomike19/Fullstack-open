@@ -1,6 +1,7 @@
 import './App.css';
 
-function App() {
+const App = () => {
+  console.log("hello world")
   return (
     <div>
     <h1>Hello</h1>
