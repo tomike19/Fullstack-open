@@ -3,19 +3,19 @@ import Part1 from './Part1';
 import Part2 from './Part2';
 import Part3 from './Part3';
  
-const Content = ({part1,exercises1,part2,exercises2,part3,exercises3}) => {
+const Content = ({part1,exercises1}) => {
     return (
         <div>
             
                <Part1 part1={part1}
                    exercises1={exercises1}
                />
-                <Part2 part2={part2}
-                   exercises2={exercises2}
+                 <Part2 part2={part2}
+                   exercise2={exercises}
                />
                 <Part3 part3={part3}
-                   exercises3={exercises3}
-               />
+                   exercise3={exercises}
+               /> 
             
         </div>
     );
