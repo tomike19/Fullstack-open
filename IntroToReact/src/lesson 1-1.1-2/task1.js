@@ -5,14 +5,16 @@ import React from 'react';
 // import Part1 from './Part1';
 
 
-const Task1 = (props) => {
-  props = {
-  name: 'Arto Hellas',
-  age: 35,
-  }
 
-const {name,age} = props;
- const bornYear = () => new Date().getFullYear() - age
+
+const Task1 = ({props}) => {
+
+    const {counter} = props
+//   props = {
+//   name: 'Arto Hellas',
+//   age: 35,
+// }
+//  const bornYear = () => new Date().getFullYear() - age
  
 //
 //  const course = 'Half Stack application development'
@@ -31,12 +33,13 @@ const {name,age} = props;
 
     return (
         <div>
-         <div>
+        {counter}
+         {/* <div>
       <p>
         Hello {name}, you are {age} years old
       </p>
       <p>So you were probably born in {bornYear()}</p>
-    </div>
+    </div> */}
             
 {/* <Header course={course} />
     <Content parts={parts} />
