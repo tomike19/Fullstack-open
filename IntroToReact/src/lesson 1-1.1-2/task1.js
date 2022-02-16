@@ -9,11 +9,11 @@ const Task1 = (props) => {
   props = {
   name: 'Arto Hellas',
   age: 35,
-}
- const bornYear = () => {
-    const yearNow = new Date().getFullYear()
-    return yearNow - props.age
- }
+  }
+
+const {name,age} = props;
+ const bornYear = () => new Date().getFullYear() - age
+ 
 //
 //  const course = 'Half Stack application development'
 //   const part1 = {
@@ -33,7 +33,7 @@ const Task1 = (props) => {
         <div>
          <div>
       <p>
-        Hello {props.name}, you are {props.age} years old
+        Hello {name}, you are {age} years old
       </p>
       <p>So you were probably born in {bornYear()}</p>
     </div>
@@ -43,7 +43,6 @@ const Task1 = (props) => {
     <Total parts={parts}  /> */}
         </div>
     );
-}
-
+  }
 export default Task1;
 
