@@ -5,17 +5,16 @@ import React from 'react';
 // import Part1 from './Part1';
 
 
-const Task1 = () => {
-  const arto = {
+const Task1 = (props) => {
+  props = {
   name: 'Arto Hellas',
   age: 35,
-  education: 'PhD',
-  greet: function() {
-    console.log('hello, my name is ' + this.name)
-  },
 }
-
-arto.greet() 
+ const bornYear = () => {
+    const yearNow = new Date().getFullYear()
+    return yearNow - props.age
+ }
+//
 //  const course = 'Half Stack application development'
 //   const part1 = {
 //     name: 'Fundamentals of React',
@@ -32,6 +31,12 @@ arto.greet()
 
     return (
         <div>
+         <div>
+      <p>
+        Hello {props.name}, you are {props.age} years old
+      </p>
+      <p>So you were probably born in {bornYear()}</p>
+    </div>
             
 {/* <Header course={course} />
     <Content parts={parts} />
