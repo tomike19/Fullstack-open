@@ -1,26 +1,19 @@
-import './App.css';
-import { useState } from 'react';
+import './App.css'
+import { useState } from 'react'
 // import Task1 from './lesson 1-1.1-2/task1';
 
 const App = () => {
-   const [ counter, setCounter ] = useState(0)
+  const [left, setLeft] = useState(0)
+  const [right, setRight] = useState(0)
 
-  // setTimeout(
-  //   () => setCounter(counter + 100),
-  //   1000
-  // )
-  const handleClick =()=> {
-    console.log('hello')
-  }
-  console.log('rendering...', counter)
   return (
     <div>
-    {counter}
-     <button onClick={handleClick}>
-        plus
-      </button>
+      {left}
+      <button onClick={() => setLeft(left + 1)}>left</button>
+      <button onClick={() => setRight(right + 1)}>right</button>
+      {right}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
